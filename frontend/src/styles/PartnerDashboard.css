@@ -1,0 +1,853 @@
+.partner-dashboard {
+  min-height: 100vh;
+  background: var(--background, #f8fafc);
+  color: var(--text, #111827);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.partner-nav {
+
+  height: 72px;
+  padding: 0 48px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.brand {
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+}
+
+
+.brand-dot {
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #111827;
+
+}
+
+
+
+.partner-nav-right {
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+}
+
+
+
+.partner-nav-label {
+
+  font-size: 14px;
+
+  color: #6b7280;
+
+}
+
+
+
+.profile-button {
+
+  width: 38px;
+  height: 38px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #111827;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+
+
+
+/* =========================
+   MAIN
+========================= */
+
+
+.partner-main {
+
+  width: min(1180px, calc(100% - 48px));
+
+  margin: auto;
+
+  padding: 54px 0 80px;
+
+}
+
+
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+
+.partner-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 30px;
+
+  margin-bottom: 34px;
+
+}
+
+
+
+.partner-eyebrow,
+.card-eyebrow {
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: .12em;
+
+  color: #6b7280;
+
+}
+
+
+
+.partner-header h1 {
+
+  margin: 0;
+
+  font-size: clamp(32px,4vw,46px);
+
+  letter-spacing: -0.04em;
+
+  line-height: 1.05;
+
+}
+
+
+
+.partner-header p {
+
+  max-width: 580px;
+
+  margin-top: 14px;
+
+  color: #6b7280;
+
+  line-height: 1.6;
+
+}
+
+
+
+
+
+/* =========================
+   STATUS
+========================= */
+
+
+.partner-status {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 9px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 999px;
+
+  background: white;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+}
+
+
+
+.status-dot {
+
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #16a34a;
+
+}
+
+
+
+
+
+
+/* =========================
+   GRID
+========================= */
+
+
+.partner-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2,1fr);
+
+  gap: 16px;
+
+  margin-bottom: 16px;
+
+}
+
+
+
+
+
+/* =========================
+   CARD
+========================= */
+
+
+.partner-card {
+
+  padding: 28px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+}
+
+
+
+.partner-card h2 {
+
+  margin: 0;
+
+  font-size: 21px;
+
+  letter-spacing: -0.03em;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   PROFILE
+========================= */
+
+
+.profile-info {
+
+  margin-top: 24px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:18px;
+
+}
+
+
+
+.profile-info div {
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:5px;
+
+}
+
+
+
+.profile-info span {
+
+  font-size:13px;
+
+  color:#6b7280;
+
+}
+
+
+
+.profile-info strong {
+
+  font-size:15px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   QUICK ACTION
+========================= */
+
+
+.quick-actions {
+
+  margin-top:22px;
+
+  display:flex;
+
+  flex-direction:column;
+
+}
+
+
+
+.quick-actions button {
+
+  width:100%;
+
+  padding:16px 0;
+
+  background:transparent;
+
+  border:none;
+
+  border-bottom:1px solid #f0f0f0;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  cursor:pointer;
+
+  font-size:14px;
+
+  color:#111827;
+
+}
+
+
+
+.quick-actions button:last-child {
+
+  border-bottom:none;
+
+}
+
+
+
+.quick-actions button:hover {
+
+  color:#4b5563;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   REFERRAL
+========================= */
+
+
+.referral-card {
+
+  margin-bottom:16px;
+
+}
+
+
+
+.referral-card p {
+
+  margin:12px 0 22px;
+
+  max-width:650px;
+
+  color:#6b7280;
+
+  line-height:1.7;
+
+}
+
+
+
+.referral-box {
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:15px;
+
+  padding:12px 14px;
+
+  background:#f9fafb;
+
+  border:1px solid #e5e7eb;
+
+  border-radius:10px;
+
+}
+
+
+
+.referral-box span {
+
+  color:#6b7280;
+
+  font-size:13px;
+
+  overflow:hidden;
+
+  text-overflow:ellipsis;
+
+  white-space:nowrap;
+
+}
+
+
+
+.referral-box button {
+
+  padding:8px 14px;
+
+  border-radius:8px;
+
+  border:1px solid #d1d5db;
+
+  background:white;
+
+  cursor:pointer;
+
+  font-size:13px;
+
+  font-weight:600;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+
+.info-card {
+
+  margin-bottom:16px;
+
+}
+
+
+
+.info-card > p {
+
+  margin-top:12px;
+
+  max-width:700px;
+
+  color:#6b7280;
+
+  line-height:1.7;
+
+}
+
+
+
+.info-list {
+
+  margin-top:28px;
+
+}
+
+
+
+.info-item {
+
+  display:flex;
+
+  gap:18px;
+
+  padding:18px 0;
+
+  border-bottom:1px solid #f0f0f0;
+
+}
+
+
+
+.info-item:last-child {
+
+  border-bottom:none;
+
+}
+
+
+
+.info-item > span {
+
+  font-size:13px;
+
+  font-weight:700;
+
+  color:#6b7280;
+
+}
+
+
+
+.info-item h3 {
+
+  margin:0 0 6px;
+
+  font-size:16px;
+
+}
+
+
+
+.info-item p {
+
+  margin:0;
+
+  color:#6b7280;
+
+  font-size:14px;
+
+  line-height:1.6;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+
+.benefit-grid {
+
+  margin-top:24px;
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:16px;
+
+}
+
+
+
+.benefit-grid div {
+
+  padding:18px;
+
+  background:#fafafa;
+
+  border:1px solid #e5e7eb;
+
+  border-radius:12px;
+
+}
+
+
+
+.benefit-grid h3 {
+
+  margin:0 0 8px;
+
+  font-size:16px;
+
+}
+
+
+
+.benefit-grid p {
+
+  margin:0;
+
+  color:#6b7280;
+
+  font-size:14px;
+
+  line-height:1.6;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   BUTTON
+========================= */
+
+
+.policy-button {
+
+  margin-top:20px;
+
+  padding:11px 16px;
+
+  border-radius:9px;
+
+  border:1px solid #d1d5db;
+
+  background:white;
+
+  color:#111827;
+
+  cursor:pointer;
+
+  font-size:13px;
+
+  font-weight:600;
+
+}
+
+
+
+
+.ambassador-info p,
+.ambassador-benefits p {
+
+  color:#6b7280;
+
+  line-height:1.7;
+
+  margin-top:12px;
+
+}
+
+
+.info-grid {
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:16px;
+
+  margin-top:28px;
+
+}
+
+
+
+.info-box {
+
+  padding:22px;
+
+  border:1px solid #e5e7eb;
+
+  border-radius:12px;
+
+  background:#ffffff;
+
+}
+
+
+
+.info-box h3 {
+
+  margin:0 0 10px;
+
+  font-size:17px;
+
+}
+
+
+
+.info-box p {
+
+  margin:0;
+
+  font-size:14px;
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+  .info-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:900px){
+
+
+  .partner-grid {
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .benefit-grid {
+
+    grid-template-columns:1fr;
+
+  }
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+  .partner-nav {
+
+    height:64px;
+
+    padding:0 20px;
+
+  }
+
+
+
+  .partner-nav-label {
+
+    display:none;
+
+  }
+
+
+
+  .partner-main {
+
+    width:calc(100% - 32px);
+
+    padding:35px 0 50px;
+
+  }
+
+
+
+  .partner-header {
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+  }
+
+
+
+  .partner-card {
+
+    padding:22px;
+
+  }
+
+
+
+  .referral-box {
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+  }
+
+
+
+  .referral-box button {
+
+    width:100%;
+
+  }
+
+
+}

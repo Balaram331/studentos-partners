@@ -1,0 +1,1187 @@
+/* =========================================================
+   LANDING PAGE
+========================================================= */
+
+.landing-page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #111111;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.landing-nav {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #111111;
+  display: inline-block;
+}
+
+.login-btn {
+  border: 1px solid #dedede;
+  background: #ffffff;
+  color: #111111;
+
+  padding: 10px 20px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #f5f5f5;
+  border-color: #cfcfcf;
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  padding: 100px 32px 120px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+  align-items: center;
+  gap: 90px;
+
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 24px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  color: #666666;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  font-weight: 750;
+}
+
+.hero h1 span {
+  color: #777777;
+}
+
+.hero-content > p {
+  max-width: 620px;
+  margin: 30px 0 34px;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: #5f5f5f;
+}
+
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+
+  border: none;
+  background: #111111;
+  color: #ffffff;
+
+  padding: 15px 22px;
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.primary-btn span {
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: #222222;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.primary-btn:hover span {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   HERO PARTNER CARD
+========================================================= */
+
+.hero-card {
+  position: relative;
+
+  background: #f7f7f7;
+  border: 1px solid #e8e8e8;
+
+  border-radius: 18px;
+
+  padding: 32px;
+
+  min-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+.card-label,
+.card-eyebrow {
+  display: block;
+
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  color: #858585;
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 42px;
+}
+
+.avatar {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #111111;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.profile-row h3 {
+  margin: 0 0 5px;
+
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+.profile-row p {
+  margin: 0;
+
+  color: #858585;
+  font-size: 13px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 42px;
+  padding-top: 22px;
+
+  border-top: 1px solid #dddddd;
+}
+
+.stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stats > div:not(:first-child) {
+  padding-left: 20px;
+  border-left: 1px solid #dddddd;
+}
+
+.stats strong {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.stats span {
+  color: #888888;
+  font-size: 12px;
+}
+
+/* =========================================================
+   COMMON SECTION
+========================================================= */
+
+.about-section,
+.platform-section,
+.journey-section,
+.roles-section,
+.help-section {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  padding: 110px 32px;
+
+  box-sizing: border-box;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+
+  margin-bottom: 55px;
+}
+
+.section-heading > span {
+  font-size: 11px;
+  font-weight: 750;
+  color: #999999;
+  letter-spacing: 0.08em;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  font-weight: 720;
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-section {
+  border-top: 1px solid #eeeeee;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.about-text {
+  max-width: 700px;
+}
+
+.about-text p {
+  margin: 0 0 25px;
+
+  font-size: 18px;
+  line-height: 1.75;
+
+  color: #555555;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.site-link-box {
+  padding: 34px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+
+  background: #fafafa;
+}
+
+.site-link-box > span {
+  display: block;
+
+  margin-bottom: 22px;
+
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.15em;
+  color: #888888;
+}
+
+.site-link-box h3 {
+  margin: 0 0 14px;
+
+  font-size: 25px;
+  letter-spacing: -0.035em;
+}
+
+.site-link-box p {
+  margin: 0 0 25px;
+
+  color: #6d6d6d;
+  line-height: 1.65;
+  font-size: 14px;
+}
+
+.site-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #111111;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  border-bottom: 1px solid #111111;
+  padding-bottom: 3px;
+}
+
+.site-link span {
+  transition: transform 0.2s ease;
+}
+
+.site-link:hover span {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   PLATFORM
+========================================================= */
+
+.platform-section {
+  border-top: 1px solid #eeeeee;
+}
+
+.platform-intro {
+  max-width: 760px;
+  margin-bottom: 55px;
+}
+
+.platform-intro p {
+  margin: 0 0 14px;
+
+  color: #626262;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.platform-intro p:last-child {
+  margin-bottom: 0;
+  color: #111111;
+  font-weight: 600;
+}
+
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.platform-card {
+  position: relative;
+
+  min-height: 310px;
+
+  padding: 30px;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+
+  box-sizing: border-box;
+}
+
+.platform-card:hover {
+  transform: translateY(-4px);
+  border-color: #d3d3d3;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+}
+
+.platform-number {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  color: #a0a0a0;
+}
+
+.platform-icon {
+  width: 45px;
+  height: 45px;
+
+  margin-bottom: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+
+  font-size: 22px;
+  color: #111111;
+}
+
+.platform-card h3 {
+  margin: 0 0 13px;
+
+  font-size: 21px;
+  letter-spacing: -0.03em;
+}
+
+.platform-card p {
+  max-width: 480px;
+
+  margin: 0;
+
+  color: #686868;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   JOURNEY
+========================================================= */
+
+.journey-section {
+  border-top: 1px solid #eeeeee;
+}
+
+.journey-card {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto 1fr;
+  align-items: center;
+
+  padding: 35px;
+
+  border: 1px solid #e4e4e4;
+  border-radius: 15px;
+
+  background: #fafafa;
+}
+
+.journey-item {
+  min-width: 0;
+}
+
+.journey-item > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: 10px;
+  font-weight: 750;
+  color: #999999;
+  letter-spacing: 0.1em;
+}
+
+.journey-item h3 {
+  margin: 0 0 8px;
+
+  font-size: 18px;
+  letter-spacing: -0.025em;
+}
+
+.journey-item p {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 1.55;
+  color: #777777;
+}
+
+.journey-arrow {
+  padding: 0 18px;
+
+  color: #a1a1a1;
+  font-size: 18px;
+}
+
+/* =========================================================
+   ROLES
+========================================================= */
+
+.roles-section {
+  border-top: 1px solid #eeeeee;
+}
+
+.role-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  padding: 28px;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.role-icon {
+  flex: 0 0 auto;
+
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #111111;
+  color: #ffffff;
+
+  border-radius: 12px;
+
+  font-weight: 750;
+  font-size: 17px;
+}
+
+.role-info {
+  flex: 1;
+}
+
+.role-info h3 {
+  margin: 0 0 7px;
+
+  font-size: 21px;
+  letter-spacing: -0.03em;
+}
+
+.role-info p {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: #707070;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.role-arrow {
+  flex: 0 0 auto;
+
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #111111;
+
+  font-size: 19px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.role-arrow:hover {
+  background: #111111;
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+/* =========================================================
+   FUNDING
+========================================================= */
+
+.funding-section {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  padding: 20px 32px 110px;
+
+  box-sizing: border-box;
+}
+
+.funding-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  padding: 45px;
+
+  border-radius: 16px;
+
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+}
+
+.funding-card h2 {
+  margin: 17px 0 12px;
+
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.funding-card p {
+  max-width: 690px;
+
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.funding-button {
+  flex: 0 0 auto;
+
+  padding: 13px 19px;
+
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #777777;
+
+  font-size: 13px;
+  font-weight: 650;
+
+  cursor: default;
+}
+
+/* =========================================================
+   MISSION / HELP
+========================================================= */
+
+.help-section {
+  border-top: 1px solid #eeeeee;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.help-card {
+  padding: 30px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+
+  background: #ffffff;
+}
+
+.help-number {
+  display: block;
+
+  margin-bottom: 42px;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  color: #999999;
+  letter-spacing: 0.1em;
+}
+
+.help-card h3 {
+  margin: 0 0 13px;
+
+  font-size: 20px;
+  letter-spacing: -0.03em;
+}
+
+.help-card p {
+  margin: 0;
+
+  color: #6d6d6d;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.final-cta {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  padding: 125px 32px;
+
+  text-align: center;
+
+  border-top: 1px solid #eeeeee;
+
+  box-sizing: border-box;
+}
+
+.final-cta h2 {
+  margin: 22px 0 20px;
+
+  font-size: clamp(40px, 6vw, 68px);
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.final-cta p {
+  max-width: 620px;
+
+  margin: 0 auto 32px;
+
+  color: #696969;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.landing-footer {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  padding: 28px 32px;
+
+  border-top: 1px solid #eeeeee;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+.landing-footer p {
+  margin: 0;
+
+  color: #888888;
+  font-size: 12px;
+}
+
+.footer-link {
+  color: #555555;
+
+  font-size: 12px;
+  font-weight: 650;
+
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #111111;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 55px;
+    padding-top: 75px;
+  }
+
+  .hero-content {
+    max-width: 760px;
+  }
+
+  .hero-card {
+    max-width: 650px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .journey-card {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 28px;
+  }
+
+  .journey-arrow {
+    display: none;
+  }
+
+  .help-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .landing-nav {
+    padding: 18px 20px;
+  }
+
+  .brand {
+    font-size: 17px;
+  }
+
+  .login-btn {
+    padding: 9px 16px;
+  }
+
+  .hero {
+    padding: 65px 20px 80px;
+    gap: 45px;
+  }
+
+  .hero h1 {
+    font-size: clamp(43px, 13vw, 62px);
+  }
+
+  .hero-content > p {
+    margin-top: 24px;
+
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .primary-btn {
+    width: 100%;
+    padding: 15px 18px;
+  }
+
+  .hero-card {
+    padding: 25px;
+    min-height: 230px;
+  }
+
+  .profile-row {
+    margin-top: 32px;
+  }
+
+  .stats {
+    margin-top: 32px;
+  }
+
+  .stats strong {
+    font-size: 19px;
+  }
+
+  .stats span {
+    font-size: 11px;
+  }
+
+  .stats > div:not(:first-child) {
+    padding-left: 12px;
+  }
+
+  .about-section,
+  .platform-section,
+  .journey-section,
+  .roles-section,
+  .help-section {
+    padding: 80px 20px;
+  }
+
+  .section-heading {
+    gap: 12px;
+    margin-bottom: 38px;
+    align-items: flex-start;
+  }
+
+  .section-heading h2 {
+    font-size: 31px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .site-link-box {
+    padding: 25px;
+  }
+
+  .site-link-box h3 {
+    font-size: 22px;
+  }
+
+  .platform-intro p {
+    font-size: 16px;
+  }
+
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .platform-card {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .platform-icon {
+    margin-bottom: 35px;
+  }
+
+  .platform-card h3 {
+    font-size: 20px;
+  }
+
+  .journey-card {
+    grid-template-columns: 1fr;
+    gap: 0;
+
+    padding: 28px;
+  }
+
+  .journey-item {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  .journey-item:last-child {
+    border-bottom: none;
+  }
+
+  .journey-item > span {
+    margin-bottom: 10px;
+  }
+
+  .journey-item h3 {
+    font-size: 19px;
+  }
+
+  .role-card {
+    align-items: flex-start;
+    padding: 23px;
+
+    gap: 16px;
+  }
+
+  .role-icon {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 10px;
+  }
+
+  .role-info h3 {
+    font-size: 19px;
+  }
+
+  .role-info p {
+    font-size: 13px;
+  }
+
+  .role-arrow {
+    width: 42px;
+    height: 42px;
+  }
+
+  .funding-section {
+    padding: 0 20px 80px;
+  }
+
+  .funding-card {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 30px;
+
+    gap: 25px;
+  }
+
+  .funding-card h2 {
+    font-size: 25px;
+  }
+
+  .funding-button {
+    width: 100%;
+  }
+
+  .help-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .help-card {
+    padding: 25px;
+  }
+
+  .help-number {
+    margin-bottom: 30px;
+  }
+
+  .final-cta {
+    padding: 90px 20px;
+  }
+
+  .final-cta h2 {
+    font-size: 43px;
+  }
+
+  .final-cta p {
+    font-size: 15px;
+  }
+
+  .landing-footer {
+    padding: 25px 20px;
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .hero-card {
+    padding: 22px;
+  }
+
+  .avatar {
+    width: 46px;
+    height: 46px;
+  }
+
+  .profile-row h3 {
+    font-size: 15px;
+  }
+
+  .stats strong {
+    font-size: 17px;
+  }
+
+  .stats span {
+    font-size: 10px;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .role-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .role-arrow {
+    grid-column: 2;
+    justify-self: end;
+    margin-top: -50px;
+  }
+
+  .final-cta h2 {
+    font-size: 39px;
+  }
+}
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}

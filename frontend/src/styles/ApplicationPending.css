@@ -1,0 +1,94 @@
+.pending-page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: #fafafa;
+  color: #111;
+}
+
+.pending-card {
+  width: 100%;
+  max-width: 520px;
+
+  padding: 45px;
+
+  background: #fff;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+}
+
+.pending-icon {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  margin: 0 auto 22px;
+
+  border-radius: 50%;
+
+  background: #f3f4f6;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pending-eyebrow {
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pending-card h1 {
+  margin: 14px 0;
+
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -1.3px;
+}
+
+.pending-card p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.pending-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 28px;
+  padding: 9px 13px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+
+  color: #555;
+
+  font-size: 12px;
+}
+
+.pending-status span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #f59e0b;
+}
